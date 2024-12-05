@@ -32,18 +32,34 @@
     <div class="gallery">
       <h1>Gallery</h1>
       <div class="img-container">
-        <img src="" alt="" />
+        <img :src="imgSrc" alt="" />
+      </div>
+      <div class="button">
+        <div @click="!beforeDisable ? previousImage() : ''">
+          <Icon icon="grommet-icons:form-previous" width="40" />
+        </div>
+        <div @click="!nextDisable ? nextImage() : ''">
+          <Icon icon="grommet-icons:form-next" width="40" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { Icon } from "@iconify/vue2";
 export default {
+  components: {
+    Icon,
+  },
   data() {
     return {
       portfolioDetail: {},
+      imageKeys: "",
       imgSrc: "",
+      index: 0,
+      nextDisable: false,
+      beforeDisable: false,
     };
   },
   computed: {
@@ -57,17 +73,46 @@ export default {
   mounted() {
     this.getPortfolio();
   },
+  watch: {
+    index() {
+      const length = this.imageKeys.length;
+
+      if (this.index === 0) {
+        this.beforeDisable = true;
+      } else if (this.index === length - 1) {
+        this.nextDisable = true;
+      } else {
+        this.beforeDisable = false;
+        this.nextDisable = false;
+      }
+
+      console.log(this.nextDisable);
+      console.log(this.beforeDisable);
+    },
+  },
   methods: {
     getPortfolio() {
       //   console.log(this.portfolio);
       this.portfolioDetail = this.portfolio.find(
         (item) => item.id === this.portfolioId
       );
-      console.log(this.portfolioDetail.imgCollection);
+      // console.log(this.portfolioDetail.imgCollection);
+      this.imageKeys = Object.keys(this.portfolioDetail.imgCollection);
+      this.imgSrc = this.portfolioDetail.imgCollection[this.imageKeys[0]];
+      console.log(this.imgSrc);
     },
-    // nextImage(){
-    //   this.imgSrc =
-    // }
+    previousImage() {
+      // const length = this.imageKeys.length;
+
+      this.index -= 1;
+      this.imgSrc =
+        this.portfolioDetail.imgCollection[this.imageKeys[this.index]];
+    },
+    nextImage() {
+      this.index += 1;
+      this.imgSrc =
+        this.portfolioDetail.imgCollection[this.imageKeys[this.index]];
+    },
   },
 };
 </script>

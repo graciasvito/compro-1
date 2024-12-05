@@ -789,7 +789,9 @@
 
   .gallery {
     padding: 5rem 0;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1 {
       // background-color: violet;
       text-align: center;
@@ -802,9 +804,11 @@
     .img-container {
       background-color: violet;
       width: 30vw;
-      height: 20vw;
+      height: 50%;
+      display: flex;
+      justify-content: center;
       img {
-        width: 20vw; /* Adjust width of images */
+        width: 100%; /* Adjust width of images */
         height: auto; /* Ensure images maintain aspect ratio */
         object-fit: cover; /* Optional: for image scaling */
         transform: scale(1);
@@ -814,6 +818,11 @@
       img:hover {
         transform: scale(1.1);
       }
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
     }
   }
 }
