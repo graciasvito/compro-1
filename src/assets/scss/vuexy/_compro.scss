@@ -1352,4 +1352,19 @@
       object-fit: contain; /* Proportionally resize the image within the container */
     }
   }
+  .new-compro-porto-content {
+    padding: 1rem;
+
+    h2 {
+      background: transparent; /* Example background */
+    }
+
+    .list-porto {
+      padding: 0 2.5rem;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
 }
