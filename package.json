@@ -1,6 +1,6 @@
 {
-  "name": "ev",
-  "version": "4.2.0",
+  "name": "comprojbp",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

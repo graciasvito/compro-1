@@ -14,17 +14,22 @@
         src="../content/first-row.png"
         alt=""
         draggable="false"
-        v-if="pathname !== '/portfolio'"
+        v-if="pathname === '/'"
       /><img
         src="../content/second-row.png"
-        v-if="pathname !== '/portfolio'"
+        v-if="pathname === '/'"
         draggable="false"
         alt=""
       />
 
-      <div v-if="pathname === '/portfolio'" class="portfolio-title">
+      <div v-else-if="pathname === '/portfolio'" class="portfolio-title">
         <h2>Portfolio</h2>
         <h1>Our Projects</h1>
+      </div>
+
+      <div v-else-if="pathname === '/certificate'" class="certificate-title">
+        <h2>Certificate</h2>
+        <h1>Our Certificates</h1>
       </div>
     </div>
   </div>

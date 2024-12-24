@@ -49,6 +49,11 @@ const router = new Router({
           name: "portfolioById",
           component: () => import("@/Landing Pages/FirstPortfolioDetail.vue"),
         },
+        {
+          path: "/certificate",
+          name: "certificate",
+          component: () => import("@/Landing Pages/CertificatePage.vue"),
+        },
 
         // {
         //   path: "/2",
