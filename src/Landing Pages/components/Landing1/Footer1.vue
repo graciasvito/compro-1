@@ -1,5 +1,5 @@
 <template>
-  <div class="compro-footer">
+  <div class="compro-footer" id="contact">
     <div class="big-container">
       <div class="left-footer">
         <div class="row align-center">
@@ -25,26 +25,9 @@
         <h2>Menu</h2>
         <div class="list-menu">
           <ul>
-            <li><a href="/"> About Jala Bumi Perkasa</a></li>
-            <li><a href="/"> Projects</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="carrer-footer">
-        <h2>Carrer</h2>
-        <div class="list-menu">
-          <ul>
-            <li><a href="/"> Carrer Development</a></li>
-            <li><a href="/"> Internship</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="reach-footer">
-        <h2>Reach Us</h2>
-        <div class="list-menu">
-          <ul>
-            <li><a href="/"> Head Office</a></li>
-            <li><a href="/"> Branch Office</a></li>
+            <li><a href="/certificate"> Certificates</a></li>
+            <li><a href="/product"> Products</a></li>
+            <li><a href="/portfolio"> Portfolio</a></li>
           </ul>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="compro-profile">
+  <div class="compro-profile" id="about">
     <div class="row text-box">
       <div class="left-box">
         <div>
@@ -14,9 +14,10 @@
               safety in every project. We strive to understand our clients'
               unique needs, providing innovative solutions that exceed
               expectations while fostering lasting relationships built on trust
-              and transparency. Our commitment to excellence ensures that we
-              navigate challenges effectively, making us the partner of choice
-              for all your construction needs.
+              and transparency. <br />
+              Our commitment to excellence ensures that we navigate challenges
+              effectively, making us the partner of choice for all your
+              construction needs.
             </p>
             <!-- <p>
               

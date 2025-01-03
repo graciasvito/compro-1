@@ -26,20 +26,13 @@
         <h2>Menu</h2>
         <div class="list-menu">
           <ul>
-            <li><a href="/"> About Jala Bumi Perkasa</a></li>
-            <li><a href="/"> Projects</a></li>
+            <li><a href="/"> Certificates</a></li>
+            <li><a href="/"> Products</a></li>
+            <li><a href="/"> Portfolio</a></li>
           </ul>
         </div>
       </div>
-      <div class="carrer-footer">
-        <h2>Career</h2>
-        <div class="list-menu">
-          <ul>
-            <li><a href="/"> Career Development</a></li>
-            <li><a href="/"> Internship</a></li>
-          </ul>
-        </div>
-      </div>
+
       <div class="reach-footer">
         <h2>Reach Us</h2>
         <div class="list-menu">

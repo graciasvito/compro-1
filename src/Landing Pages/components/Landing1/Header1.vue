@@ -20,18 +20,15 @@
         <a href="/#about" @click="toAbout">About Us</a>
       </vs-navbar-item>
       <vs-navbar-item index="2">
-        <a href="/#service" @click="toservice">Services</a>
+        <a @click="toCertificates">Certificates</a>
       </vs-navbar-item>
       <vs-navbar-item index="3">
-        <a href="/#service" @click="toservice">Certificates</a>
+        <a @click="toProduct">Products</a>
       </vs-navbar-item>
       <vs-navbar-item index="4">
-        <a href="/#service" @click="toProduct">Products</a>
-      </vs-navbar-item>
-      <vs-navbar-item index="5">
         <a @click="toPortfolio">Portfolio</a>
       </vs-navbar-item>
-      <vs-navbar-item index="6">
+      <vs-navbar-item index="5">
         <a href="/#contact" @click="toContact">Contact</a>
       </vs-navbar-item>
     </vs-navbar>
@@ -73,13 +70,11 @@ export default {
         behavior: "smooth",
       });
     },
+    toCertificates() {
+      window.location.href = "/certificate";
+    },
     toPortfolio() {
       window.location.href = "/portfolio";
-      // window.scrollTo({
-      //   top: document.getElementById("portfolio").offsetTop,
-      //   left: 0,
-      //   behavior: "smooth",
-      // });
     },
     toProduct() {
       window.location.href = "/product";

@@ -1,22 +1,23 @@
 <template>
   <div class="compro2-portfolio" id="portfolio">
-    <h1>Our <span>Projects</span></h1>
+    <h1>Our <span>Portfolio</span></h1>
     <div class="project-card-container">
       <div
         v-for="(item, index) of portfolioList"
         :key="index"
         class="card-portfolio"
-        @click="clickProject(item.id)"
       >
         <img :src="item.image" alt="image" />
 
         <h2>{{ item.user }}</h2>
         <p>{{ item.title }}</p>
-        <div class="button">View Project</div>
+        <!-- <div class="button">View Project</div> -->
       </div>
     </div>
 
-    <div class="view-more"><p @click="morePortfolio()">View More</p></div>
+    <div class="view-more">
+      <p @click="morePortfolio()">View More Portfolio</p>
+    </div>
   </div>
 </template>
 
