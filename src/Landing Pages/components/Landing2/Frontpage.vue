@@ -31,6 +31,10 @@
         <h2>Certificate</h2>
         <h1>Our Certificates</h1>
       </div>
+      <div v-else-if="pathname === '/product'" class="product-title">
+        <!-- <h2>Product</h2> -->
+        <h1>Products</h1>
+      </div>
     </div>
   </div>
 </template>

@@ -54,6 +54,11 @@ const router = new Router({
           name: "certificate",
           component: () => import("@/Landing Pages/CertificatePage.vue"),
         },
+        {
+          path: "/product",
+          name: "product",
+          component: () => import("@/Landing Pages/ProductPage.vue"),
+        },
 
         // {
         //   path: "/2",

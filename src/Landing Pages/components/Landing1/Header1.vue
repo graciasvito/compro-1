@@ -23,9 +23,15 @@
         <a href="/#service" @click="toservice">Services</a>
       </vs-navbar-item>
       <vs-navbar-item index="3">
-        <a @click="toPortfolio">Portfolio</a>
+        <a href="/#service" @click="toservice">Certificates</a>
       </vs-navbar-item>
       <vs-navbar-item index="4">
+        <a href="/#service" @click="toProduct">Products</a>
+      </vs-navbar-item>
+      <vs-navbar-item index="5">
+        <a @click="toPortfolio">Portfolio</a>
+      </vs-navbar-item>
+      <vs-navbar-item index="6">
         <a href="/#contact" @click="toContact">Contact</a>
       </vs-navbar-item>
     </vs-navbar>
@@ -74,6 +80,9 @@ export default {
       //   left: 0,
       //   behavior: "smooth",
       // });
+    },
+    toProduct() {
+      window.location.href = "/product";
     },
     toContact() {
       window.scrollTo({
