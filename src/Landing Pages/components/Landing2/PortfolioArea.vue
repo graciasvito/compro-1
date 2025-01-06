@@ -9,8 +9,7 @@
       >
         <img :src="item.image" alt="image" />
 
-        <h2>{{ item.user }}</h2>
-        <p>{{ item.title }}</p>
+        <h2>{{ item.title }}</h2>
         <!-- <div class="button">View Project</div> -->
       </div>
     </div>
@@ -22,42 +21,34 @@
 </template>
 
 <script>
-import dokumen1 from "../content/dokumen1.png";
 import dokumen2 from "../content/dokumen2.png";
 import dokumen3 from "../content/dokumen3.png";
-import sbd1 from "../content/portfolio/SBD-1.png";
-import sbd2 from "../content/portfolio/SBD-2.png";
-import PtbaPltu1 from "../content/portfolio/PTBA-pltu-1.png";
-import PtbaPltu2 from "../content/portfolio/PTBA-pltu-2.png";
-import PtbaPltu3 from "../content/portfolio/PTBA-pltu-3.png";
-import Subang1 from "../content/portfolio/Subang-1.png";
-import Subang2 from "../content/portfolio/Subang-2.png";
-import Subang3 from "../content/portfolio/Subang-3.png";
+import isolasi from "../content/isolasi.png";
+import painting from "../content/painting.png";
 
 export default {
   data() {
     return {
       portfolioList: [
         {
-          image: dokumen1,
-          title: "Internal Tank (Blasting & Coating)",
-          user: "PT. Sungai Budi Group",
-          id: "blasting-sbd",
-          imgCollection: { sbd1, sbd2 },
+          image: dokumen3,
+          title: "Blasting and Coating Internal Tangki",
+          id: "blasting-subang",
+        },
+        {
+          image: painting,
+          title: "Pengecatan Struktur/Konstruksi",
+          id: "painting-jakabaring",
+        },
+        {
+          image: isolasi,
+          title: "Isolasi Pipa",
+          id: "isolaso-pipa",
         },
         {
           image: dokumen2,
-          title: "Blasting Turbine",
-          user: "PLTU Bukit Asam",
+          title: "Blasting Rotor and Stator Pipa Turbin",
           id: "blasting-pltu_ptba",
-          imgCollection: { PtbaPltu1, PtbaPltu2, PtbaPltu3 },
-        },
-        {
-          image: dokumen3,
-          title: " Internal Tank ( Blasting Coating )",
-          user: "PT. Subang",
-          id: "blasting-subang",
-          imgCollection: { Subang1, Subang2, Subang3 },
         },
       ],
     };
