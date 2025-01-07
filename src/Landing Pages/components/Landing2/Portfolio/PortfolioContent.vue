@@ -30,9 +30,9 @@
 
 <script>
 import dokumen1 from "../../content/dokumen1.png";
-import dokumen2 from "../../content/dokumen2.png";
+// import dokumen2 from "../../content/dokumen2.png";
 import dokumen3 from "../../content/dokumen3.png";
-import dokumen4 from "../../content/dokumen4.png";
+import dokumen8 from "../../content/dokumen8.png";
 import sbd1 from "../../content/portfolio/SBD-1.png";
 import sbd2 from "../../content/portfolio/SBD-2.png";
 import PtbaPltu1 from "../../content/portfolio/PTBA-pltu-1.png";
@@ -58,7 +58,7 @@ export default {
           imgCollection: { sbd1, sbd2 },
         },
         {
-          image: dokumen2,
+          image: dokumen3,
           title: "Blasting Turbine",
           user: "PLTU Bukit Asam",
           id: "blasting-pltu_ptba",
@@ -72,7 +72,7 @@ export default {
           imgCollection: { Subang1, Subang2, Subang3 },
         },
         {
-          image: dokumen4,
+          image: dokumen8,
           title: "Shiploader Coating",
           user: "PT. Bukit Asam Kertapati Palembang",
           id: "coating-ptba",

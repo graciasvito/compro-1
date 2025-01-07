@@ -571,7 +571,7 @@
 .compro2-portfolio {
   background-color: #3e6d9c;
   padding: 5rem;
-  height: 90vh;
+  height: fit-content;
 
   h1 {
     font-size: 32px;
@@ -586,12 +586,58 @@
   .project-card-container {
     margin-top: 5rem;
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    gap: 1rem; /* Add space between cards */
     justify-content: space-between;
-    cursor: pointer;
 
     .card-portfolio {
       transition: 0.5s ease-in-out;
+      img {
+        width: 20vw;
+        height: 30vh;
+      }
 
+      h2 {
+        font-size: 17px;
+        width: 20vw;
+        color: rgb(217, 217, 217);
+        font-weight: 600;
+      }
+
+      .button {
+        margin-top: 1rem;
+        font-size: 13px;
+        width: fit-content;
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 15px;
+        padding: 1rem;
+        opacity: 0;
+        color: rgb(217, 217, 217);
+      }
+    }
+
+    .card-portfolio:hover {
+      margin-top: -20px;
+
+      .button {
+        display: block;
+        animation: moveUp 0.3s forwards;
+        transition: 0.2s ease-in;
+      }
+
+      .button:hover {
+        background-color: rgb(217, 217, 217);
+        color: #000000;
+      }
+    }
+  }
+  .project-card-container-extra {
+    margin-top: 5rem;
+    display: flex;
+    gap: 3rem; /* Add space between cards */
+
+    .card-portfolio {
+      transition: 0.5s ease-in-out;
       img {
         width: 20vw;
         height: 30vh;
@@ -1361,6 +1407,32 @@
         }
 
         h2 {
+          width: 55vw;
+          font-size: 20px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .card-portfolio:hover {
+        margin-top: 0;
+      }
+    }
+
+    .project-card-container-extra {
+      margin-top: 3rem;
+      flex-direction: column;
+
+      .card-portfolio {
+        margin-top: 2rem;
+
+        img {
+          width: 100%;
+        }
+
+        h2 {
+          width: 55vw;
           font-size: 20px;
         }
         p {
