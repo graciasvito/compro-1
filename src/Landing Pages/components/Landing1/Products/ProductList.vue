@@ -14,9 +14,9 @@
             <button class="btn add-to-cart" @click="openImage(product.image)">
               <Icon icon="mynaui:plus-solid" />
             </button>
-            <button class="btn more-info">
+            <!-- <button class="btn more-info">
               <Icon icon="mi:options-horizontal" />
-            </button>
+            </button> -->
           </div>
         </div>
         <h3>{{ product.name }}</h3>
@@ -33,9 +33,9 @@
             <button class="btn add-to-cart" @click="openImage(jasa.image)">
               <Icon icon="mynaui:plus-solid" />
             </button>
-            <button class="btn more-info">
+            <!-- <button class="btn more-info">
               <Icon icon="mi:options-horizontal" />
-            </button>
+            </button> -->
           </div>
         </div>
         <h3>{{ jasa.name }}</h3>
@@ -52,6 +52,19 @@
 <script>
 import Placeholder from "../../content/placeholder-img.jpg";
 import { Icon } from "@iconify/vue2";
+import Hempel from "../../content/product/hempel.jpg";
+import Voith from "../../content/product/voith_turbo.png";
+import Moog from "../../content/product/moog_servo-valve.png";
+import Fisher from "../../content/product/fisher.jpg";
+import Donalson from "../../content/product/donalson_filter.jpg";
+import Sakura from "../../content/product/sakura_filter.png";
+import Pall from "../../content/product/pall_filter.jpg";
+import Amarillo from "../../content/product/amarillo_gear.jpg";
+import GeSensor from "../../content/product/ge_sensor.jpg";
+import Bently from "../../content/product/bently_nevada.jpg";
+import Siemens from "../../content/product/siemens_motor.jpg";
+import Torishima from "../../content/product/torishima_pump.png";
+import Voksel from "../../content/product/voksel_cable.jpg";
 
 import ModalPhoto from "../components/ModalPhoto.vue";
 
@@ -62,95 +75,90 @@ export default {
       products: [
         {
           name: "Hempel",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Hempel,
+          description: "Epoxy Primer",
         },
         {
           name: "Voith Turbo",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Voith,
+          description: "High-Performance Industrial Gearbox",
         },
         {
           name: "Moog Servo Valve",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Moog,
+          description: "Precision Hydraulic Control Valve",
         },
         {
           name: "Fisher",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Fisher,
+          description: "Durable Flow Control Valve",
         },
         {
           name: "Donalson Filter",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Donalson,
+          description: "Filtration System",
         },
         {
           name: "Sakura Filter",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Sakura,
+          description: "Heavy-Duty Filters",
         },
         {
           name: "Pall Filter",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Pall,
+          description: "Depth Filter",
         },
         {
           name: "Amarillo Gear",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Amarillo,
+          description: "Double Reduction Gear Drives",
         },
         {
           name: "GE Sensor",
-          image: Placeholder,
-          description: "Flow Measurement",
-        },
-        {
-          name: "Honey Well",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: GeSensor,
+          description: "Measurement Sensor",
         },
         {
           name: "Bently Nevada",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Bently,
+          description: "Proximity Sensor",
         },
         {
           name: "Siemens Motor",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Siemens,
+          description: "Electric Motor",
         },
         {
           name: "Torishima Pump",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Torishima,
+          description: "Water Pump",
         },
         {
           name: "Voksel Cable",
-          image: Placeholder,
-          description: "Flow Measurement",
+          image: Voksel,
+          description: "Electrical Cable",
         },
       ],
       jasa: [
         {
-          name: "Sandblasting Rotor dll",
+          name: "Sandblasting",
           image: Placeholder,
-          description: "Flow Measurement",
+        },
+        {
+          name: "Rotor dll",
+          image: Placeholder,
         },
         {
           name: "Protective Coating/Painting",
           image: Placeholder,
-          description: "Flow Measurement",
         },
         {
           name: "Floor Coating",
           image: Placeholder,
-          description: "Flow Measurement",
         },
         {
           name: "Insulation",
           image: Placeholder,
-          description: "Flow Measurement",
         },
       ],
       viewProduct: false,

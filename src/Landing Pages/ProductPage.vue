@@ -2,8 +2,8 @@
   <div>
     <Header1 />
     <Frontpage />
-    <!-- <ProductList /> -->
-    <NewProductList />
+    <ProductList />
+    <!-- <NewProductList /> -->
     <Footer1 />
   </div>
 </template>
