@@ -18,7 +18,7 @@
           <br />
           <p class="cp">Phone : (+62 711) 711674</p>
           <p class="cp">Fax : (+62 711) 719725</p>
-          <p class="cp">E-mail : suppportadmin@jalaabumiperkasa.com</p>
+          <p class="cp">E-mail : suppportadmin@jalabumiperkasa.com</p>
         </div>
       </div>
       <div class="menu-footer">
