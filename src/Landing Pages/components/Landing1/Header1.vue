@@ -25,9 +25,9 @@
       <vs-navbar-item index="3">
         <a @click="toProduct">Products</a>
       </vs-navbar-item>
-      <vs-navbar-item index="4">
+      <!-- <vs-navbar-item index="4">
         <a @click="toPortfolio">Portfolio</a>
-      </vs-navbar-item>
+      </vs-navbar-item> -->
       <vs-navbar-item index="5">
         <a href="/#contact" @click="toContact">Contact</a>
       </vs-navbar-item>

@@ -18,7 +18,7 @@
       <a @click="toHome">Home</a>
       <a @click="toservice">Services</a>
       <a @click="toAbout">About Us</a>
-      <a @click="toPortfolio">Portfolio</a>
+      <!-- <a @click="toPortfolio">Portfolio</a> -->
       <a @click="toContact">Contact</a>
     </div>
     <div></div>

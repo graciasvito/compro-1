@@ -25,23 +25,25 @@
     </div>
 
     <div class="barang"><h2>Pengadaan Jasa</h2></div>
-    <div class="list-container">
-      <div class="product-card" v-for="(jasa, index) in jasa" :key="index">
+    <div v-for="(item, index) in jasa" :key="index" class="list-item">
+      <Icon icon="material-symbols:engineering" width="30" color="black" />
+      <p>{{ item.name }}</p>
+    </div>
+    <!-- <div class="product-card" v-for="(jasa, index) in jasa" :key="index">
         <div class="image-container">
           <img :src="jasa.image" :alt="jasa.name" />
           <div class="overlay">
             <button class="btn add-to-cart" @click="openImage(jasa.image)">
               <Icon icon="mynaui:plus-solid" />
             </button>
-            <!-- <button class="btn more-info">
+            <button class="btn more-info">
               <Icon icon="mi:options-horizontal" />
-            </button> -->
+            </button>
           </div>
         </div>
         <h3>{{ jasa.name }}</h3>
         <p>{{ jasa.description }}</p>
-      </div>
-    </div>
+      </div> -->
     <ModalPhoto
       :visible="viewProduct"
       :image="productImage"

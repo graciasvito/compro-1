@@ -26,9 +26,9 @@
       </div>
     </div>
 
-    <div class="view-more">
+    <!-- <div class="view-more">
       <p @click="morePortfolio()">View More Portfolio</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
         },
         {
           image: dokumen3,
-          title: "Blasting Turbine",
+          title: "Blasting Rotor Turbine",
           id: "blasting-turbine",
         },
         {

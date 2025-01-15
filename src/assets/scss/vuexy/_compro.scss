@@ -257,7 +257,7 @@
       }
       .contact {
         padding: 2.5rem 1rem;
-        width: 25vw;
+        width: 30vw;
 
         p.address,
         p.cp {
@@ -1062,6 +1062,17 @@
           opacity: 1;
         }
       }
+    }
+  }
+
+  .list-item {
+    display: flex;
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+
+    p {
+      font-size: 20px;
     }
   }
 }
